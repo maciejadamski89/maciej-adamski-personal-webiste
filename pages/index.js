@@ -9,9 +9,7 @@ export default function Home() {
         <meta name="description" content="Maciej Adamski Resume Page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <h1 className="text-4xl text-slate-900">My Resume Page</h1>
-      </main>
+      <main></main>
     </>
   );
 }
