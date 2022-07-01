@@ -4,9 +4,7 @@ import axios from "axios";
 
 Home.getInitialProps = async () => {
   try {
-    const res = await axios.get(
-      `https://${process.env.NEXT_PUBLIC_URL}/api/head`
-    );
+    const res = await axios.get(`${process.env.NEXT_PUBLIC_URL}/api/head`);
     const title = res.data.title;
     const description = res.data.description;
     return { title, description };
@@ -16,7 +14,7 @@ Home.getInitialProps = async () => {
 };
 
 export default function Home({ title, description }) {
-  console.log(`dupadd: https://${process.env.NEXT_PUBLIC_URL}/api/head`);
+  console.log(`dupadd: ${process.env.NEXT_PUBLIC_URL}/api/head`);
   return (
     <>
       <Head>
