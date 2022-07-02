@@ -1,4 +1,7 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import axios from "axios";
+
+axios.defaults.baseURL = `${process.env.NEXT_PUBLIC_URL}`;
 
 export default function Document() {
   return (

@@ -1,46 +1,21 @@
 import Navlink from "./Navlink";
+import axios from "axios";
+import useSWR from "swr";
+import Button from "../Button";
 
 export default function Items() {
+  const address = `/api/menu`;
+  const fetcher = async (url) => await axios.get(url).then((res) => res.data);
+  const { data, error } = useSWR(address, fetcher);
+
+  if (error) <p>Loading failed...</p>;
+  if (!data) <h1>Loading...</h1>;
+
   return (
     <>
       <div>
         <ul className="items-center hidden space-x-6 lg:flex">
-          <Navlink name="Home" />
-          <li>
-            <a href="#about" className="hover:py-2 hover:border-b-4">
-              AboutMe
-            </a>
-          </li>
-          <li>
-            <a href="#experience" className="hover:py-2 hover:border-b-4">
-              Experience
-            </a>
-          </li>
-          <li>
-            <a href="#" className="hover:py-2 hover:border-b-4">
-              Skills
-            </a>
-          </li>
-          <li>
-            <a href="#" className="hover:py-2 hover:border-b-4">
-              Awards
-            </a>
-          </li>
-          <li>
-            <a href="#" className="hover:py-2 hover:border-b-4">
-              Certs
-            </a>
-          </li>
-          <li>
-            <a href="#" className="hover:py-2 hover:border-b-4">
-              Contact
-            </a>
-          </li>
-          <a href="http://maciejadamski89.pl/resume_maciej_adamski.pdf">
-            <button className="px-6 py-2 font-bold bg-blue-800 rounded-2xl hover:bg-blue-900">
-              Get Resume
-            </button>
-          </a>
+          {data && data.menu.map((item) => <Navlink key={item} name={item} />)}
         </ul>
       </div>
     </>
