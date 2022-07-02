@@ -4,13 +4,13 @@ import axios from "axios";
 import { useMenu } from "../lib/useMenu";
 import useSWR from "swr";
 
-export default function Home({ title, description, data }) {
+export default function Home({ data }) {
   return (
     <>
       <Head>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <link rel="icon" href="/favicon.ico" />
+        {/* <title>{title}</title> */}
+        {/* <meta name="description" content={description} /> */}
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <main>
         <Navbar data={data} />
