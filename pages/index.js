@@ -1,8 +1,5 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar/";
-import axios from "axios";
-import { useMenu } from "../lib/useMenu";
-import useSWR from "swr";
 
 export default function Home({ data }) {
   return (
@@ -13,7 +10,8 @@ export default function Home({ data }) {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <main>
-        <Navbar data={data} />
+        {/* <Navbar dataa={data} /> */}
+        {data.menu}
       </main>
     </>
   );
@@ -21,7 +19,9 @@ export default function Home({ data }) {
 
 export async function getStaticProps() {
   const address = `${process.env.NEXT_PUBLIC_URL}/api/menu`;
-  const data = await fetch(address);
+  const rest = await fetch(address);
+  const data = await rest.json();
+  console.log("getStaticProps data: ", data);
 
   return {
     props: {
