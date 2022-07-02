@@ -10,7 +10,6 @@ export default function Items({ data }) {
 
   //   if (error) <p>Loading failed...</p>;
   //   if (!data) <h1>Loading...</h1>;
-  console.log(`dupka: ${data}`);
 
   return (
     <>

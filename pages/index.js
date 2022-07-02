@@ -5,7 +5,6 @@ import { useMenu } from "../lib/useMenu";
 import useSWR from "swr";
 
 export default function Home({ title, description, data }) {
-  console.log("data: ", data);
   return (
     <>
       <Head>
