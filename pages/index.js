@@ -20,8 +20,9 @@ export default function Home({ data }) {
 export async function getStaticProps() {
   const address = `${process.env.NEXT_PUBLIC_URL}/api/menu`;
   const rest = await fetch(address);
-  const data = await rest.json();
+  let data = await rest.json();
   console.log("getStaticProps data: ", data);
+  data = JSON.parse(JSON.stringify(data));
 
   return {
     props: {
