@@ -3,13 +3,14 @@ import axios from "axios";
 import useSWR from "swr";
 import Button from "../Button";
 
-export default function Items() {
-  const address = `/api/menu`;
-  const fetcher = async (url) => await axios.get(url).then((res) => res.data);
-  const { data, error } = useSWR(address, fetcher);
+export default function Items({ data }) {
+  //   const address = `/api/menu`;
+  //   const fetcher = async (url) => await axios.get(url).then((res) => res.data);
+  //   const { data, error } = useSWR(address, fetcher);
 
-  if (error) <p>Loading failed...</p>;
-  if (!data) <h1>Loading...</h1>;
+  //   if (error) <p>Loading failed...</p>;
+  //   if (!data) <h1>Loading...</h1>;
+  console.log(`dupka: ${data}`);
 
   return (
     <>

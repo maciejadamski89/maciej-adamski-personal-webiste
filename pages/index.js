@@ -2,20 +2,10 @@ import Head from "next/head";
 import Navbar from "../components/Navbar/";
 import axios from "axios";
 import { useMenu } from "../lib/useMenu";
+import useSWR from "swr";
 
-Home.getInitialProps = async () => {
-  try {
-    const res = await axios.get(`/api/head`);
-    const title = res.data.title;
-    const description = res.data.description;
-    return { title, description };
-  } catch (error) {
-    return { error };
-  }
-};
-
-export default function Home({ title, description }) {
-  console.log(`dupadd: ${process.env.NEXT_PUBLIC_URL}/api/head`);
+export default function Home({ title, description, data }) {
+  console.log("data: ", data);
   return (
     <>
       <Head>
@@ -24,8 +14,20 @@ export default function Home({ title, description }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Navbar />
+        <Navbar data={data} />
       </main>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const address = `${process.env.NEXT_PUBLIC_URL}/api/menu`;
+  const res = await fetch(address);
+  const data = await res.json();
+
+  return {
+    props: {
+      data,
+    },
+  };
 }
