@@ -1,7 +1,4 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import axios from "axios";
-
-axios.defaults.baseURL = `${process.env.NEXT_PUBLIC_URL}`;
 
 export default function Document() {
   return (
@@ -12,7 +9,7 @@ export default function Document() {
           rel="stylesheet"
         ></link>
       </Head>
-      <body className="bg-slate-900 font-poppins">
+      <body className="bg-dark font-poppins text-gray-100">
         <Main />
         <NextScript />
       </body>

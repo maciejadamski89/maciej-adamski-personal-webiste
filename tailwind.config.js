@@ -5,7 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        dark: "#181818",
+      },
+    },
     fontFamily: {
       poppins: ["'Poppins', 'sans-serif'"],
     },

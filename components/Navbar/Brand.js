@@ -7,9 +7,11 @@ const brand_href = BrandContent()[0].url;
 export default function Brand() {
   return (
     <>
-      <div className="text-lg font-bold text-white hover:text-slate-400">
+      <div className="text-lg font-bold text-gray-100 hover:text-gray-300">
         <Link href={brand_href}>
-          <a>{brand_name}</a>
+          <a className="hover:py-2 hover:border-b-4 border-blue-600 ">
+            {brand_name}
+          </a>
         </Link>
       </div>
     </>
