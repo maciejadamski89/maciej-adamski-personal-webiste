@@ -10,8 +10,10 @@ export default function Document() {
         ></link>
       </Head>
       <body className="bg-dark font-poppins text-gray-100">
-        <Main />
-        <NextScript />
+        <div className="px-32 py-12">
+          <Main />
+          <NextScript />
+        </div>
       </body>
     </Html>
   );
