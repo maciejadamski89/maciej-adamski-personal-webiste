@@ -1,14 +1,14 @@
 import Brand from "./Brand";
 import Items from "./Items";
 
-export default function Navbar({ data }) {
+export default function Navbar() {
   return (
     <>
       <header>
         <div className="py-6">
           <nav className="container flex items-center justify-between w-full px-8 mx-auto sm:px-8 xl:px-24 lg:px-4 md:px-8">
             <Brand />
-            <Items data={data} />
+            <Items />
             <div className="flex items-center lg:hidden">
               <button className="mobile-menu-button">
                 <svg

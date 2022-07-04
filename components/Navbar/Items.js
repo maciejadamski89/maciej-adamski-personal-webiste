@@ -1,21 +1,15 @@
 import Navlink from "./Navlink";
-import axios from "axios";
-import useSWR from "swr";
-import Button from "../Button";
+import { NavbarContent } from "../../content/Navbar";
 
-export default function Items({ data }) {
-  //   const address = `/api/menu`;
-  //   const fetcher = async (url) => await axios.get(url).then((res) => res.data);
-  //   const { data, error } = useSWR(address, fetcher);
-
-  //   if (error) <p>Loading failed...</p>;
-  //   if (!data) <h1>Loading...</h1>;
-
+export default function Items() {
+  const nav_items = NavbarContent();
   return (
     <>
       <div>
         <ul className="items-center hidden space-x-6 lg:flex">
-          {data && data.menu.map((item) => <Navlink key={item} name={item} />)}
+          {nav_items.map((item, index) => {
+            return <Navlink key={index} name={item.name} url={item.url} />;
+          })}
         </ul>
       </div>
     </>

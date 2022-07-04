@@ -1,32 +1,18 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar/";
+import { HeadContent } from "../content/Head";
 
-export default function Home({ data }) {
+export default function Home() {
+  const title = HeadContent()[0].title;
+  const description = HeadContent()[0].description;
   return (
     <>
       <Head>
-        {/* <title>{title}</title> */}
-        {/* <meta name="description" content={description} /> */}
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        {/* <Navbar dataa={data} /> */}
-        {data.menu}
-      </main>
+      <main>{<Navbar />}</main>
     </>
   );
-}
-
-export async function getStaticProps() {
-  const address = `${process.env.NEXT_PUBLIC_URL}/api/menu`;
-  const rest = await fetch(address);
-  let data = await rest.json();
-  console.log("getStaticProps data: ", data);
-  data = JSON.parse(JSON.stringify(data));
-
-  return {
-    props: {
-      data,
-    },
-  };
 }
