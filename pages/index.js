@@ -1,6 +1,8 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar/";
-import { HeadContent } from "../content/Head";
+import Navbar from "@/components/Navbar/";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import { HeadContent } from "@/content/Head";
 
 export default function Home() {
   const title = HeadContent()[0].title;
@@ -12,7 +14,11 @@ export default function Home() {
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>{<Navbar />}</main>
+      <main>
+        <Navbar />
+        <Hero />
+        <About />
+      </main>
     </>
   );
 }
