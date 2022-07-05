@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <>
       <header>
-        <nav className="container flex items-center justify-between w-full">
+        <nav className="flex items-center justify-between w-full max-w-7xl mx-auto py-8">
           <Brand />
           <Items />
           <div className="flex items-center lg:hidden">

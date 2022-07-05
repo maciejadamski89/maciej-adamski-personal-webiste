@@ -5,13 +5,15 @@ import Underline from "./Underline";
 export default function About() {
   return (
     <>
-      <section id="about" className="container mx-auto space-y-8 text-left">
-        <h1 className="text-3xl font-bold xl:text-5xl ">
+      <section
+        id="about"
+        className="max-w-4xl mx-auto space-y-8 text-center mt-32"
+      >
+        <h2 className="text-white">
           About me
           <DotSmall />
-          <Underline />
-        </h1>
-        <p className="text-xl text-gray-400">
+        </h2>
+        <p className="2xl:text-2xl text-gray-400">
           Hi, I'm Maciej. I deal with software development, package management,
           automation and web design. I can easily establish new contacts. I'm
           strongly involved in every project. Performance and design are key for

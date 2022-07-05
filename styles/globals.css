@@ -6,3 +6,11 @@ html,
 body {
   scroll-behavior: smooth;
 }
+
+h1 {
+  @apply font-bold xl:text-6xl;
+}
+
+h2 {
+  @apply font-bold xl:text-4xl;
+}

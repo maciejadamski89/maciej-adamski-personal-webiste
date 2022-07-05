@@ -1,7 +1,8 @@
 export function HeroContent() {
   const hero_content = {
     headers: ["DevOps", "Software Developer"],
-    paragraph: "Some text here needed",
+    paragraph:
+      "I am currently focusing on frontned development in <Link href='nextjs.com'><a>Next.js</a></Link> using TailwindCSS and React MUI.",
   };
   return hero_content;
 }
