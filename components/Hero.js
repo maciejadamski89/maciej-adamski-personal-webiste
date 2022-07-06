@@ -5,7 +5,7 @@ import Link from "next/link";
 import { DotBig, DotSmall } from "./Dot";
 
 export default function Hero() {
-  const headers = ["DevOps", "Software Developer"];
+  const headers = ["Software Developer", "DevOps"];
   const link_style = "underline underline-offset-2 hover:text-blue-800";
   const paragraph = () => {
     return (
@@ -48,7 +48,7 @@ export default function Hero() {
           </div>
           <div className="flex justify-end w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
             <Image
-              className="object-cover object-center rounded"
+              className="object-cover object-center rounded-xl"
               alt="hero"
               width="400px"
               height="600px"
