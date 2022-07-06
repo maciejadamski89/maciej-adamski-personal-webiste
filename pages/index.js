@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "@/components/Navbar/";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Experience from "@/components/Experience";
 import { HeadContent } from "@/content/Head";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <About />
+        <Experience />
       </main>
     </>
   );
