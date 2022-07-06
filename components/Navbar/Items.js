@@ -2,7 +2,32 @@ import Navlink from "./Navlink";
 import { NavbarContent } from "../../content/Navbar";
 
 export default function Items() {
-  const nav_items = NavbarContent();
+  const nav_items = [
+    {
+      name: "Home",
+      url: "/",
+    },
+    {
+      name: "About",
+      url: "#about",
+    },
+    {
+      name: "Experience",
+      url: "#experience",
+    },
+    {
+      name: "Skills",
+      url: "#skills",
+    },
+    {
+      name: "Projects",
+      url: "#projects",
+    },
+    {
+      name: "Contact",
+      url: "#contact",
+    },
+  ];
   return (
     <>
       <div>
