@@ -30,11 +30,11 @@ export default function Hero() {
   return (
     <>
       <section className="text-gray-600 min-h-screen mx-auto flex items-center justify-center max-w-[80rem]">
-        <div className="flex md:flex-row flex-col items-center w-full">
-          <div className="lg:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left items-center text-center space-y-4">
+        <div className="flex flex-col items-center w-full md:flex-row">
+          <div className="flex flex-col items-center space-y-4 text-center lg:flex-grow md:w-1/2 md:items-start md:text-left">
             {headers.map((header, index) => {
               return (
-                <h1 key={index} className="sm:text-6xl text-3xl text-white">
+                <h1 key={index} className="text-3xl text-white sm:text-6xl">
                   {header}
                   <DotSmall />
                 </h1>
@@ -43,10 +43,10 @@ export default function Hero() {
 
             <p className="py-6 text-2xl text-gray-400">{paragraph()}</p>
             <div className="flex justify-center">
-              <Button title="Get resume" href="#" />
+              <Button title="Get my resume" href="#" />
             </div>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-end">
+          <div className="flex justify-end w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
             <Image
               className="object-cover object-center rounded"
               alt="hero"
