@@ -4,11 +4,12 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
-import { HeadContent } from "@/content/Head";
+import Projects from "@/components/Projects";
 
 export default function Home() {
-  const title = HeadContent()[0].title;
-  const description = HeadContent()[0].description;
+  const title = "Maciej Adamski";
+  const description =
+    "Portfolio website of Maciej Adamski - Software Developer";
   return (
     <>
       <Head>
@@ -22,6 +23,7 @@ export default function Home() {
         <About />
         <Experience />
         <Skills />
+        <Projects />
       </main>
     </>
   );
