@@ -67,7 +67,7 @@ export default function About() {
               <div className="mb-2 text-xl font-bold">
                 <Link href="https://github.com/zubin-madon/bogoshipo_website">
                   <a className="underline underline-offset-2 hover:text-blue-800">
-                    Tempalte-bhai
+                    Template-bhai
                   </a>
                 </Link>{" "}
               </div>
