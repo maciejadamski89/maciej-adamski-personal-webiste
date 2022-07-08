@@ -22,9 +22,7 @@ export default function Skills() {
           My Skills
           <DotSmall />
         </h2>
-        <p className="text-gray-400 2xl:text-2xl">
-          I am currently working with
-        </p>
+        <p className="text-gray-400 2xl:text-2xl">I work with</p>
 
         <div className="grid grid-cols-6 text-white">
           <ReactIcon width={width} height={height} />
