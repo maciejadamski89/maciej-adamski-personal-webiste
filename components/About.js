@@ -4,10 +4,8 @@ import { DotSmall } from "./Dot";
 export default function About() {
   return (
     <>
-      <section
-        id="about"
-        className="max-w-4xl mx-auto space-y-8 text-center mt-52"
-      >
+      <div id="about"></div>
+      <section className="max-w-4xl mx-auto space-y-8 text-center mt-52">
         <h2 className="text-white">
           About me
           <DotSmall />

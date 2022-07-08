@@ -9,10 +9,8 @@ import {
 export default function Contact() {
   return (
     <>
-      <section
-        id="contact"
-        className="max-w-4xl mx-auto space-y-8 text-center mt-52"
-      >
+      <div id="contact"></div>
+      <section className="max-w-4xl mx-auto space-y-8 text-center mt-52">
         <h2 className="text-white">
           Contact
           <DotSmall />

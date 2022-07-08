@@ -4,10 +4,8 @@ export default function About() {
   const link_style = "underline underline-offset-2 hover:text-blue-800";
   return (
     <>
-      <section
-        id="experience"
-        className="flex flex-col max-w-4xl mx-auto space-y-8 text-center mt-52"
-      >
+      <div id="experience"></div>
+      <section className="flex flex-col max-w-4xl mx-auto space-y-8 text-center mt-52">
         <h2 className="text-white">
           I worked for
           <DotSmall />
