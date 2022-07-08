@@ -28,7 +28,7 @@ export default function Hero() {
 
   return (
     <>
-      <section className="text-gray-600 mt-10 mx-auto flex items-center justify-center max-w-[80rem]">
+      <section className="text-gray-600 mt-40 mx-auto flex items-center justify-center max-w-[80rem]">
         <div className="flex flex-col items-center w-full md:flex-row">
           <div className="flex flex-col items-center space-y-4 text-center lg:flex-grow md:w-1/2 md:items-start md:text-left">
             {headers.map((header, index) => {
