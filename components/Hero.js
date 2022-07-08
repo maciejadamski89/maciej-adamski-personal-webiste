@@ -43,7 +43,10 @@ export default function Hero() {
 
             <p className="py-6 text-2xl text-gray-400">{paragraph()}</p>
             <div className="flex justify-center">
-              <Button title="Get my resume" href="#" />
+              <Button
+                title="Checkout source code of this page"
+                href="https://github.com/maciejadamski89/next-my-resume-page"
+              />
             </div>
           </div>
           <div className="flex justify-end w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
