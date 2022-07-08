@@ -10,11 +10,11 @@ export default function Hero() {
   const paragraph = () => {
     return (
       <>
-        I am currently focusing on frontned development in{" "}
+        I create beautiful front-end apps and wepsites using {""}
         <Link href="https://nextjs.org">
           <a className={link_style}>Next.js</a>
         </Link>
-        &nbsp;using&nbsp;
+        &nbsp;,&nbsp;
         <Link href="https://tailwindcss.com">
           <a className={link_style}>TailwindCSS</a>
         </Link>
@@ -29,12 +29,12 @@ export default function Hero() {
 
   return (
     <>
-      <section className="text-gray-600 min-h-screen mx-auto flex items-center justify-center max-w-[80rem]">
+      <section className="text-gray-600 mt-10 mx-auto flex items-center justify-center max-w-[80rem]">
         <div className="flex flex-col items-center w-full md:flex-row">
           <div className="flex flex-col items-center space-y-4 text-center lg:flex-grow md:w-1/2 md:items-start md:text-left">
             {headers.map((header, index) => {
               return (
-                <h1 key={index} className="text-3xl text-white sm:text-6xl">
+                <h1 key={index} className="text-2xl text-white sm:text-6xl">
                   {header}
                   <DotSmall />
                 </h1>
