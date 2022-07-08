@@ -1,12 +1,10 @@
-import Button from "./Button";
-import { DotBig, DotSmall } from "./Dot";
-import Underline from "./Underline";
+import { DotSmall } from "./Dot";
 import {
   TwitterIcon,
   FacebookIcon,
   LinkedinIcon,
   GithubIcon,
-} from "./Socialicons";
+} from "./Icons/Socialicons";
 
 export default function Contact() {
   return (

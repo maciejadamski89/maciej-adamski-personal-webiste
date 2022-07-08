@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Button from "./Button";
-import { HeroContent } from "@/content/Hero";
 import Link from "next/link";
-import { DotBig, DotSmall } from "./Dot";
+import { DotSmall } from "./Dot";
 
 export default function Hero() {
   const headers = ["Software Developer", "DevOps"];

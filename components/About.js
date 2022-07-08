@@ -1,6 +1,5 @@
 import Button from "./Button";
-import { DotBig, DotSmall } from "./Dot";
-import Underline from "./Underline";
+import { DotSmall } from "./Dot";
 
 export default function About() {
   return (

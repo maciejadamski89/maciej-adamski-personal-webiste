@@ -1,6 +1,4 @@
-import Button from "./Button";
-import { DotBig, DotSmall } from "./Dot";
-import Underline from "./Underline";
+import { DotSmall } from "./Dot";
 import {
   ReactIcon,
   NextIcon,
@@ -8,7 +6,7 @@ import {
   MUIIcon,
   DockerIcon,
   DjangoIcon,
-} from "./Devicons";
+} from "./Icons/Devicons";
 
 export default function Skills() {
   const [width, height] = [100, 100];
@@ -19,10 +17,9 @@ export default function Skills() {
         className="max-w-4xl mx-auto space-y-8 text-center mt-52"
       >
         <h2 className="text-white">
-          My Skills
+          I work with
           <DotSmall />
         </h2>
-        <p className="text-gray-400 2xl:text-2xl">I work with</p>
 
         <div className="grid grid-cols-6 text-white">
           <ReactIcon width={width} height={height} />

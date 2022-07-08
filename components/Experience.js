@@ -1,6 +1,4 @@
-import Button from "./Button";
-import { DotBig, DotSmall } from "./Dot";
-import Underline from "./Underline";
+import { DotSmall } from "./Dot";
 
 export default function About() {
   const link_style = "underline underline-offset-2 hover:text-blue-800";
