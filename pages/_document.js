@@ -8,8 +8,9 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
           rel="stylesheet"
         ></link>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body className="bg-dark font-poppins text-gray-100">
+      <body className="text-gray-100 bg-dark font-poppins">
         <Main />
         <NextScript />
       </body>
