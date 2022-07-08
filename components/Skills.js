@@ -7,6 +7,7 @@ import {
   DockerIcon,
   DjangoIcon,
 } from "./Icons/Devicons";
+import Link from "next/link";
 
 export default function Skills() {
   const [width, height] = [100, 100];
@@ -21,27 +22,39 @@ export default function Skills() {
 
         <div className="grid grid-cols-6 text-white ">
           <p className="flex flex-col items-center justify-center">
-            <span className="mb-2 text-gray-400">React</span>
+            <Link href="https://reactjs.org/">
+              <a className="mb-2 text-gray-400 link">React</a>
+            </Link>
             <ReactIcon width={width} height={height} />
           </p>
           <p className="flex flex-col items-center justify-center">
-            <span className="mb-2 text-gray-400">Next.js</span>
+            <Link href="https://nextjs.org">
+              <a className="mb-2 text-gray-400 link">Next.js</a>
+            </Link>
             <NextIcon width={width} height={height} />
           </p>
           <p className="flex flex-col items-center justify-center">
-            <span className="mb-2 text-gray-400">TailwindCSS</span>
+            <Link href="https://tailwindcss.com">
+              <a className="mb-2 text-gray-400 link">TailwindCSS</a>
+            </Link>
             <TailwindIcon width={width} height={height} />
           </p>
           <p className="flex flex-col items-center justify-center">
-            <span className="mb-2 text-gray-400">Material UI</span>
+            <Link href="https://mui.com">
+              <a className="mb-2 text-gray-400 link">Material UI</a>
+            </Link>
             <MUIIcon width={width} height={height} />
           </p>
           <p className="flex flex-col items-center justify-center">
-            <span className="mb-2 text-gray-400">Django</span>
+            <Link href="https://www.djangoproject.com">
+              <a className="mb-2 text-gray-400 link">Django</a>
+            </Link>
             <DjangoIcon width={width} height={height} />
           </p>
           <p className="flex flex-col items-center justify-center">
-            <span className="mb-2 text-gray-400">Docker</span>
+            <Link href="https://www.docker.com">
+              <a className="mb-2 text-gray-400 link">Docker</a>
+            </Link>
             <DockerIcon width={width} height={height} />
           </p>
         </div>
