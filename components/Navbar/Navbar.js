@@ -27,6 +27,32 @@ export default function Navbar() {
             </button>
           </div>
         </nav>
+        <nav className="z-50 block md:hidden">
+          <div className="fixed bottom-0 left-0 right-0 bg-neutral-900">
+            <div className="grid grid-cols-4 h-[80px] gap-1 px-1 ">
+              <div className="flex items-center justify-center text-sm bg-blue-900">
+                <a href="#experience">
+                  <p>Experience</p>
+                </a>
+              </div>
+              <div className="flex items-center justify-center text-sm bg-blue-900">
+                <a href="#skills">
+                  <p>Skills</p>
+                </a>
+              </div>
+              <div className="flex items-center justify-center text-sm bg-blue-900">
+                <a href="#projects">
+                  <p>Projects</p>
+                </a>
+              </div>
+              <div className="flex items-center justify-center text-sm bg-blue-900">
+                <a href="#contact">
+                  <p>Contact</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
       </header>
     </>
   );
