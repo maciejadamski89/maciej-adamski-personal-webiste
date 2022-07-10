@@ -14,13 +14,13 @@ export default function Skills() {
   return (
     <>
       <div id="skills"></div>
-      <section className="max-w-4xl mx-auto space-y-8 text-center mt-52">
-        <h2 className="text-white">
+      <section className="max-w-4xl px-4 mx-auto mt-32 space-y-8 text-center lg:mt-52">
+        <h2 className="text-2xl text-white">
           I work with
           <DotSmall />
         </h2>
 
-        <div className="grid grid-cols-6 text-white ">
+        <div className="grid grid-cols-2 gap-4 text-white lg:grid-cols-6 ">
           <p className="flex flex-col items-center justify-center">
             <Link href="https://reactjs.org/">
               <a className="mb-2 text-gray-400 link">React</a>

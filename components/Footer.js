@@ -3,7 +3,7 @@ export default function Footer() {
     <>
       <footer
         id="footer"
-        className="py-10 mt-32 text-xl text-center text-gray-400"
+        className="py-10 mt-32 text-lg text-center text-gray-400 xl:text-xl"
       >
         <p>© Copyright 2022. Created by Maciej Adamski.</p>
       </footer>

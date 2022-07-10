@@ -10,13 +10,15 @@ export default function Contact() {
   return (
     <>
       <div id="contact"></div>
-      <section className="max-w-4xl mx-auto space-y-8 text-center mt-52">
-        <h2 className="text-white">
+      <section className="max-w-4xl px-4 mx-auto mt-32 space-y-8 text-center lg:mt-52">
+        <h2 className="text-2xl text-white">
           Contact
           <DotSmall />
         </h2>
-        <p className="text-gray-400 2xl:text-2xl">+48 510 180 212</p>
-        <p className="text-gray-400 2xl:text-2xl">maciej.adamski89@gmail.com</p>
+        <p className="text-lg text-gray-400 2xl:text-2xl">+48 510 180 212</p>
+        <p className="text-lg text-gray-400 2xl:text-2xl">
+          maciej.adamski89@gmail.com
+        </p>
         <div className="grid grid-cols-4 gap-0 mx-auto">
           <div className="flex justify-center">
             <TwitterIcon

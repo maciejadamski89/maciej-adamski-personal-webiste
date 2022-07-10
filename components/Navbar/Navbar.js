@@ -9,9 +9,10 @@ export default function Navbar() {
           <Brand />
           <Items />
         </nav>
+        <hr className="mb-8 border-neutral-800"></hr>
 
         {/* Mobile Navbar */}
-        <nav className="z-50 block md:hidden">
+        {/* <nav className="z-50 block md:hidden">
           <div className="fixed bottom-0 left-0 right-0 bg-neutral-900">
             <div className="grid grid-cols-4 h-[80px] gap-1 px-1 ">
               <a
@@ -40,7 +41,7 @@ export default function Navbar() {
               </a>
             </div>
           </div>
-        </nav>
+        </nav> */}
       </header>
     </>
   );

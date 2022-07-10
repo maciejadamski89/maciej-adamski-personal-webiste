@@ -28,12 +28,12 @@ export default function Hero() {
 
   return (
     <>
-      <section className="text-gray-600 lg:mt-40 mx-auto flex items-center justify-center max-w-[80rem] ">
+      <section className="text-gray-600 lg:mt-40 mx-auto flex items-center justify-center max-w-[80rem] px-2">
         <div className="flex flex-col items-center w-full md:flex-row">
           <div className="flex flex-col items-center space-y-4 text-center lg:flex-grow md:w-1/2 md:items-start md:text-left">
             {headers.map((header, index) => {
               return (
-                <h1 key={index} className="text-3xl text-white md:text-6xl">
+                <h1 key={index} className="text-2xl text-white md:text-6xl">
                   {header}
                   <DotSmall />
                 </h1>
