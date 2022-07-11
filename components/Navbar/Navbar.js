@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <>
       <header>
-        <nav className="md:fixed top-0 left-0 right-0 z-10 flex items-center justify-between xl:max-w-7xl w-full p-4 sm:p-8 mx-auto bg-[#181818]">
+        <nav className="md:fixed top-0 left-0 right-0 flex items-center justify-between xl:max-w-7xl w-full p-8 mx-auto bg-[#181818] z-50">
           <Brand />
           <Items />
           <div className="lg:hidden">

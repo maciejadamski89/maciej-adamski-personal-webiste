@@ -6,7 +6,7 @@ export default function About() {
     <>
       <div id="experience"></div>
       <section className="flex flex-col max-w-4xl px-4 mx-auto mt-32 space-y-8 text-center lg:mt-52">
-        <h2 className="text-2xl text-white">
+        <h2 className="text-4xl text-white">
           I worked for
           <DotSmall />
         </h2>

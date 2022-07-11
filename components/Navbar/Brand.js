@@ -8,7 +8,7 @@ export default function Brand() {
         <Link href="/">
           <a>
             Maciej Adamski
-            <DotSmall />
+            {/* <DotSmall /> */}
           </a>
         </Link>
       </div>

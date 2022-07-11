@@ -11,7 +11,7 @@ export default function Contact() {
     <>
       <div id="contact"></div>
       <section className="max-w-4xl px-4 mx-auto mt-32 space-y-8 text-center lg:mt-52">
-        <h2 className="text-2xl text-white">
+        <h2 className="text-4xl text-white">
           Contact
           <DotSmall />
         </h2>

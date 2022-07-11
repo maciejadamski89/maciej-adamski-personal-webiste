@@ -28,31 +28,37 @@ export default function Hero() {
 
   return (
     <>
-      <section className="text-gray-600 lg:mt-40 mx-auto flex items-center justify-center max-w-[80rem] px-2">
-        <div className="flex flex-col items-center w-full md:flex-row">
-          <div className="flex flex-col items-center space-y-4 text-center lg:flex-grow md:w-1/2 md:items-start md:text-left">
-            {headers.map((header, index) => {
-              return (
-                <h1 key={index} className="text-2xl text-white md:text-6xl">
+      <section className="grid gap-2 px-2 mx-auto mt-16 md:px-8 md:mt-32 md:grid-cols-3 max-w-7xl">
+        <div className="flex flex-col items-center justify-center space-y-6 lg:space-y-8 md:items-start md:col-span-2">
+          {headers.map((header, index) => {
+            return (
+              <>
+                <h1
+                  key={index}
+                  className="text-4xl text-center text-white lg:text-5xl xl:text-6xl "
+                >
                   {header}
-                  <DotSmall />
-                </h1>
-              );
-            })}
 
-            <p className="py-6 text-lg text-gray-400 md:text-2xl">
-              {paragraph()}
-            </p>
-            <div className="flex justify-center">
-              <Button
-                title="Checkout source code of this page"
-                href="https://github.com/maciejadamski89/next-my-resume-page"
-              />
-            </div>
-          </div>
-          <div className="flex justify-end w-8/12 mt-8 md:mt-0 lg:max-w-lg lg:w-full md:w-1/2">
+                  <div className="hidden md:inline-block">
+                    <DotSmall />
+                  </div>
+                </h1>
+              </>
+            );
+          })}
+
+          <p className="text-lg text-center text-gray-400 md:text-left md:text-2xl">
+            {paragraph()}
+          </p>
+          <Button
+            title="Page source code"
+            href="https://github.com/maciejadamski89/next-my-resume-page"
+          />
+        </div>
+        <div className="flex justify-center mt-8 md:mt-0 md:justify-end">
+          <div className="w-1/2 md:w-full">
             <Image
-              className="object-cover object-center rounded-xl -z-10"
+              className="object-cover object-center rounded-xl"
               alt="hero"
               width="400px"
               height="600px"
