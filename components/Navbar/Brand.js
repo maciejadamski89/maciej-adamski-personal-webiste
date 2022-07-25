@@ -1,15 +1,13 @@
 import Link from "next/link";
-import { DotSmall } from "../Dot";
+
+const brand_name = "Maciej Adamski";
 
 export default function Brand() {
   return (
     <>
       <div className="text-xl font-bold text-gray-100 hover:text-gray-300">
         <Link href="/">
-          <a>
-            Maciej Adamski
-            {/* <DotSmall /> */}
-          </a>
+          <a>{brand_name}</a>
         </Link>
       </div>
     </>
