@@ -6,6 +6,44 @@ import {
   GithubIcon,
 } from "./Icons/Socialicons";
 
+const PhoneIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-6 h-6"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+      />
+    </svg>
+  );
+};
+
+const MailIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-6 h-6"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+      />
+    </svg>
+  );
+};
+
 export default function Contact() {
   return (
     <>
@@ -16,37 +54,11 @@ export default function Contact() {
           <Dot />
         </h2>
         <div className="flex items-center justify-center space-x-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-            />
-          </svg>
+          <PhoneIcon />
           <p className="text-lg text-gray-400 2xl:text-2xl">+48 510 180 212</p>
         </div>
         <div className="flex items-center justify-center space-x-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-            />
-          </svg>
+          <MailIcon />
           <p className="text-lg text-gray-400 2xl:text-2xl">
             maciej.adamski89@gmail.com
           </p>
