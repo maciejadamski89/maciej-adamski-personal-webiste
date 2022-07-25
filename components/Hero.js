@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "./Button";
 import Link from "next/link";
-import { DotSmall } from "./Dot";
+import { Dot } from "./Dot";
 
 export default function Hero() {
   const headers = ["Software Developer", "DevOps"];
@@ -40,7 +40,7 @@ export default function Hero() {
                   {header}
 
                   <div className="hidden md:inline-block">
-                    <DotSmall />
+                    <Dot />
                   </div>
                 </h1>
               </>

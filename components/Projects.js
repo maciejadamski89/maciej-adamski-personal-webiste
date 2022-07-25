@@ -1,4 +1,4 @@
-import { DotSmall } from "./Dot";
+import { Dot } from "./Dot";
 import Link from "next/link";
 
 export default function About() {
@@ -8,7 +8,7 @@ export default function About() {
       <section className="max-w-4xl px-4 mx-auto mt-32 space-y-8 text-center lg:lg:mt-52">
         <h2 className="text-4xl text-white">
           Projects
-          <DotSmall />
+          <Dot />
         </h2>
         <div className="gap-8 xl:grid xl:grid-cols-2">
           <div>

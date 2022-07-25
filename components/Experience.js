@@ -1,4 +1,4 @@
-import { DotSmall } from "./Dot";
+import { Dot } from "./Dot";
 
 export default function About() {
   const link_style = "underline underline-offset-2 hover:text-blue-800";
@@ -8,7 +8,7 @@ export default function About() {
       <section className="flex flex-col max-w-4xl px-4 mx-auto mt-32 space-y-8 text-center lg:mt-52">
         <h2 className="text-4xl text-white">
           I worked for
-          <DotSmall />
+          <Dot />
         </h2>
         <p className="text-lg text-gray-400 2xl:text-2xl">
           <a href="https://www.nomachine.com/" className={link_style}>

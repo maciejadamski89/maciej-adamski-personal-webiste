@@ -1,4 +1,4 @@
-import { DotSmall } from "./Dot";
+import { Dot } from "./Dot";
 import {
   ReactIcon,
   NextIcon,
@@ -52,7 +52,7 @@ export default function Skills() {
     >
       <h2 className="text-4xl text-white">
         I work with
-        <DotSmall />
+        <Dot />
       </h2>
 
       <ul className="grid grid-cols-2 gap-4 text-white lg:grid-cols-6 ">

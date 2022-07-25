@@ -1,5 +1,5 @@
 import Button from "./Button";
-import { DotSmall } from "./Dot";
+import { Dot } from "./Dot";
 
 export default function About() {
   return (
@@ -8,7 +8,7 @@ export default function About() {
       <section className="max-w-4xl px-4 mx-auto mt-32 space-y-8 text-center lg:mt-52">
         <h2 className="text-4xl text-white">
           About me
-          <DotSmall />
+          <Dot />
         </h2>
         <p className="text-lg text-gray-400 2xl:text-2xl">
           Hi, my name is Maciej. I'm currently working as a Software Developer

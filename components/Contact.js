@@ -1,4 +1,4 @@
-import { DotSmall } from "./Dot";
+import { Dot } from "./Dot";
 import {
   TwitterIcon,
   FacebookIcon,
@@ -13,7 +13,7 @@ export default function Contact() {
       <section className="max-w-4xl px-4 mx-auto mt-32 space-y-8 text-center lg:mt-52">
         <h2 className="text-4xl text-white">
           Contact
-          <DotSmall />
+          <Dot />
         </h2>
         <div className="flex items-center justify-center space-x-2">
           <svg
