@@ -9,8 +9,14 @@ import {
 } from "./Icons/Devicons";
 import Link from "next/link";
 
+//
+//Size of dev icons
+//
 const [width, height] = [100, 100];
 
+//
+//Content
+//
 const dev_list = [
   {
     name: "React",
@@ -44,6 +50,9 @@ const dev_list = [
   },
 ];
 
+//
+//Component
+//
 export default function Skills() {
   return (
     <section

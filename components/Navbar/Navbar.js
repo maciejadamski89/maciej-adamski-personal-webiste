@@ -4,16 +4,17 @@ import Button from "@/components/Button";
 
 export default function Navbar() {
   return (
-    <>
-      <header>
-        <nav className="md:fixed top-0 left-0 right-0 flex items-center justify-between xl:max-w-7xl w-full p-8 mx-auto bg-[#181818] z-50">
-          <Brand />
-          <Items />
-          <div className="lg:hidden">
-            <Button title="Contact" href="#contact" />
-          </div>
-        </nav>
-      </header>
-    </>
+    <header>
+      <nav className="top-0 left-0 right-0 z-50 flex items-center justify-between w-full p-8 mx-auto md:fixed xl:max-w-7xl bg-dark">
+        <Brand />
+        <Items />
+
+        {/* Mobile */}
+        <div className="lg:hidden">
+          <Button title="Contact" href="#contact" />
+        </div>
+        {/* Mobile */}
+      </nav>
+    </header>
   );
 }

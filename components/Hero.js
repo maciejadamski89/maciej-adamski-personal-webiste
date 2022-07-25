@@ -3,29 +3,35 @@ import Button from "./Button";
 import Link from "next/link";
 import { Dot } from "./Dot";
 
-export default function Hero() {
-  const headers = ["Software Developer", "DevOps"];
-  const link_style = "underline underline-offset-2 hover:text-blue-800";
-  const paragraph = () => {
-    return (
-      <>
-        I create beautiful front-end apps and wepsites using {""}
-        <Link href="https://nextjs.org">
-          <a className={link_style}>Next.js</a>
-        </Link>
-        &nbsp;,&nbsp;
-        <Link href="https://tailwindcss.com">
-          <a className={link_style}>TailwindCSS</a>
-        </Link>
-        &nbsp;and&nbsp;{" "}
-        <Link href="https://mui.com">
-          <a className={link_style}>React MUI</a>
-        </Link>
-        &nbsp;.
-      </>
-    );
-  };
+//
+//Content
+//
+const headers = ["Software Developer", "DevOps"];
+const link_style = "underline underline-offset-2 hover:text-blue-800";
+const paragraph = () => {
+  return (
+    <>
+      I create beautiful front-end apps and wepsites using {""}
+      <Link href="https://nextjs.org">
+        <a className={link_style}>Next.js</a>
+      </Link>
+      &nbsp;,&nbsp;
+      <Link href="https://tailwindcss.com">
+        <a className={link_style}>TailwindCSS</a>
+      </Link>
+      &nbsp;and&nbsp;{" "}
+      <Link href="https://mui.com">
+        <a className={link_style}>React MUI</a>
+      </Link>
+      &nbsp;.
+    </>
+  );
+};
 
+//
+//Component
+//
+export default function Hero() {
   return (
     <>
       <section className="grid gap-2 px-2 mx-auto mt-16 md:px-8 md:mt-32 md:grid-cols-3 max-w-7xl">

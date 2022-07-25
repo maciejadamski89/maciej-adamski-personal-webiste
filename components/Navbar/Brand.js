@@ -1,7 +1,13 @@
 import Link from "next/link";
 
+//
+//Content
+//
 const brand_name = "Maciej Adamski";
 
+//
+//Component
+//
 export default function Brand() {
   return (
     <>

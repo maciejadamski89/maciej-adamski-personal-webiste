@@ -6,6 +6,9 @@ import {
   GithubIcon,
 } from "./Icons/Socialicons";
 
+//
+//Icons
+//
 const PhoneIcon = () => {
   return (
     <svg
@@ -29,7 +32,7 @@ const MailIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-6 h-6"
+      className="w-6 h-6 "
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -44,6 +47,19 @@ const MailIcon = () => {
   );
 };
 
+//
+//Content
+//
+const phone_number = "+48 510 180 212";
+const email_address = "maciej.adamski89@gmail.com";
+const twiter_link = "https://twitter.com/MaciejAdamski89";
+const facebook_link = "https://www.facebook.com/maciej.adamski89";
+const linkedin_link = "https://www.linkedin.com/in/maciej-adamski-0455a984/";
+const github_link = "https://github.com/maciejadamski89";
+
+//
+//Component
+//
 export default function Contact() {
   return (
     <section
@@ -56,42 +72,28 @@ export default function Contact() {
       </h2>
       <div className="flex items-center justify-center space-x-2">
         <PhoneIcon />
-        <p className="text-lg text-gray-400 2xl:text-2xl">+48 510 180 212</p>
+        <p className="text-lg text-gray-400 2xl:text-2xl hover:text-white">
+          {phone_number}
+        </p>
       </div>
       <div className="flex items-center justify-center space-x-2">
         <MailIcon />
-        <p className="text-lg text-gray-400 2xl:text-2xl">
-          maciej.adamski89@gmail.com
+        <p className="text-lg text-gray-400 2xl:text-2xl hover:text-white">
+          {email_address}
         </p>
       </div>
       <div className="grid grid-cols-4 gap-0 mx-auto !mt-16">
         <div className="flex justify-center">
-          <TwitterIcon
-            width="50"
-            height="50"
-            href="https://twitter.com/MaciejAdamski89"
-          />
+          <TwitterIcon width="50" height="50" href={twiter_link} />
         </div>
         <div className="flex justify-center">
-          <FacebookIcon
-            width="50"
-            height="50"
-            href="https://www.facebook.com/maciej.adamski89"
-          />
+          <FacebookIcon width="50" height="50" href={facebook_link} />
         </div>
         <div className="flex justify-center">
-          <LinkedinIcon
-            width="50"
-            height="50"
-            href="https://www.linkedin.com/in/maciej-adamski-0455a984/"
-          />
+          <LinkedinIcon width="50" height="50" href={linkedin_link} />
         </div>
         <div className="flex justify-center">
-          <GithubIcon
-            width="50"
-            height="50"
-            href="https://github.com/maciejadamski89"
-          />
+          <GithubIcon width="50" height="50" href={github_link} />
         </div>
       </div>
     </section>
