@@ -11,7 +11,7 @@ const link_style = "underline underline-offset-2 hover:text-blue-800";
 const paragraph = () => {
   return (
     <>
-      I create beautiful front-end apps and wepsites using {""}
+      I create beautiful front-end apps and websites using {""}
       <Link href="https://nextjs.org">
         <a className={link_style}>Next.js</a>
       </Link>
