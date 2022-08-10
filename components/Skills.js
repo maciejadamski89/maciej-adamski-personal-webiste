@@ -8,6 +8,7 @@ import {
   DjangoIcon,
 } from "./Icons/Devicons";
 import Link from "next/link";
+import Button from "./Button";
 
 //
 //Size of dev icons
@@ -79,6 +80,12 @@ export default function Skills() {
           );
         })}
       </ul>
+      <div>
+        <Button
+          title="Check my CodeWars profile"
+          href="https://www.codewars.com/users/maciejadamski"
+        />
+      </div>
     </section>
   );
 }
