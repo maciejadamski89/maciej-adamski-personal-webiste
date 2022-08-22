@@ -39,37 +39,45 @@ export default function Hero() {
           {headers.map((header, index) => {
             return (
               <>
-                <h1
-                  key={index}
-                  className="text-4xl text-center text-white lg:text-5xl xl:text-6xl "
-                >
-                  {header}
+                <div data-aos="fade-right">
+                  <h1
+                    key={index}
+                    className="text-4xl text-center text-white lg:text-5xl xl:text-6xl "
+                  >
+                    {header}
 
-                  <div className="hidden md:inline-block">
-                    <Dot />
-                  </div>
-                </h1>
+                    <div className="hidden md:inline-block">
+                      <Dot />
+                    </div>
+                  </h1>
+                </div>
               </>
             );
           })}
 
-          <p className="text-lg text-center text-gray-400 md:text-left md:text-2xl">
-            {paragraph()}
-          </p>
-          <Button
-            title="Page source code"
-            href="https://github.com/maciejadamski89/next-my-resume-page"
-          />
+          <div data-aos="fade-right" data-aos-delay="300">
+            <p className="text-lg text-center text-gray-400 md:text-left md:text-2xl">
+              {paragraph()}
+            </p>
+          </div>
+          <div data-aos="fade-right" data-aos-delay="500">
+            <Button
+              title="Page source code"
+              href="https://github.com/maciejadamski89/next-my-resume-page"
+            />
+          </div>
         </div>
-        <div className="flex justify-center mt-8 md:mt-0 md:justify-end">
-          <div className="w-1/2 md:w-full">
-            <Image
-              className="object-cover object-center rounded-xl"
-              alt="hero"
-              width="400px"
-              height="600px"
-              src="/profile.jpg"
-            ></Image>
+        <div data-aos="fade-left">
+          <div className="flex justify-center mt-8 md:mt-0 md:justify-end">
+            <div className="w-1/2 md:w-full">
+              <Image
+                className="object-cover object-center rounded-xl"
+                alt="hero"
+                width="400px"
+                height="600px"
+                src="/profile.jpg"
+              ></Image>
+            </div>
           </div>
         </div>
       </section>

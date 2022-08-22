@@ -1,5 +1,6 @@
 import Button from "./Button";
 import { Dot } from "./Dot";
+// ..
 
 //
 //Content
@@ -18,17 +19,23 @@ export default function About() {
   return (
     <section
       id="about"
-      className="max-w-4xl px-4 pt-32 mx-auto space-y-8 text-center lg:pt-52"
+      className="max-w-4xl px-4 pt-32 mx-auto space-y-8 text-center lg:pt-80"
     >
-      <h2 className="text-4xl text-white">
-        About me
-        <Dot />
-      </h2>
-      <p className="text-lg text-gray-400 2xl:text-2xl">
-        {about_me_description}
-      </p>
+      <div data-aos="fade-up">
+        <h2 className="text-4xl text-white">
+          About me
+          <Dot />
+        </h2>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="300">
+        <p className="text-lg text-gray-400 2xl:text-2xl">
+          {about_me_description}
+        </p>
+      </div>
       <div>
-        <Button title="Get in touch" href="#contact" />
+        <div data-aos="fade-left" data-aos-delay="400">
+          <Button title="Get in touch" href="#contact" />
+        </div>
       </div>
     </section>
   );

@@ -55,36 +55,44 @@ const dev_list = [
 //Component
 //
 export default function Skills() {
+  let delay = 0;
   return (
     <section
       id="skills"
-      className="max-w-4xl px-4 pt-32 mx-auto space-y-8 text-center lg:pt-52"
+      className="max-w-4xl px-4 pt-32 mx-auto space-y-8 text-center lg:pt-80"
     >
-      <h2 className="text-4xl text-white">
-        I work with
-        <Dot />
-      </h2>
+      <div data-aos="fade-up">
+        <h2 className="text-4xl text-white">
+          I work with
+          <Dot />
+        </h2>
+      </div>
 
       <ul className="grid grid-cols-2 gap-4 text-white lg:grid-cols-6 ">
         {dev_list.map((dev) => {
+          delay += 200;
           return (
             <li
               key={dev.name}
               className="flex flex-col items-center justify-center"
             >
-              <Link href={dev.link}>
-                <a className="mb-2 text-gray-400 link">{dev.name}</a>
-              </Link>
-              {dev.icon}
+              <div data-aos="zoom-out" data-aos-delay={delay}>
+                <Link href={dev.link}>
+                  <a className="mb-2 text-gray-400 link">{dev.name}</a>
+                </Link>
+                {dev.icon}
+              </div>
             </li>
           );
         })}
       </ul>
-      <div>
-        <Button
-          title="Check my CodeWars profile"
-          href="https://www.codewars.com/users/maciejadamski"
-        />
+      <div data-aos="fade-left" data-aos-delay="1000">
+        <div>
+          <Button
+            title="Check my CodeWars profile"
+            href="https://www.codewars.com/users/maciejadamski"
+          />
+        </div>
       </div>
     </section>
   );

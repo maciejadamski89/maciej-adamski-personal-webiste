@@ -64,36 +64,50 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="max-w-4xl px-4 pt-32 mx-auto space-y-8 text-center lg:pt-52"
+      className="max-w-4xl px-4 pt-32 mx-auto space-y-8 text-center lg:pt-80"
     >
-      <h2 className="text-4xl text-white">
-        Contact
-        <Dot />
-      </h2>
-      <div className="flex items-center justify-center space-x-2">
-        <PhoneIcon />
-        <p className="text-lg text-gray-400 2xl:text-2xl hover:text-white">
-          {phone_number}
-        </p>
+      <div data-aos="fade-up">
+        <h2 className="text-4xl text-white">
+          Contact
+          <Dot />
+        </h2>
       </div>
-      <div className="flex items-center justify-center space-x-2">
-        <MailIcon />
-        <p className="text-lg text-gray-400 2xl:text-2xl hover:text-white">
-          {email_address}
-        </p>
+      <div data-aos="fade-right" data-aos-delay="200">
+        <div className="flex items-center justify-center space-x-2">
+          <PhoneIcon />
+          <p className="text-lg text-gray-400 2xl:text-2xl hover:text-white">
+            {phone_number}
+          </p>
+        </div>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="400">
+        <div className="flex items-center justify-center space-x-2">
+          <MailIcon />
+          <p className="text-lg text-gray-400 2xl:text-2xl hover:text-white">
+            {email_address}
+          </p>
+        </div>
       </div>
       <div className="grid grid-cols-4 gap-0 mx-auto !mt-16">
-        <div className="flex justify-center">
-          <TwitterIcon width="50" height="50" href={twiter_link} />
+        <div data-aos="zoom-out" data-aos-delay="600">
+          <div className="flex justify-center">
+            <TwitterIcon width="50" height="50" href={twiter_link} />
+          </div>
         </div>
-        <div className="flex justify-center">
-          <FacebookIcon width="50" height="50" href={facebook_link} />
+        <div data-aos="zoom-out" data-aos-delay="800">
+          <div className="flex justify-center">
+            <FacebookIcon width="50" height="50" href={facebook_link} />
+          </div>
         </div>
-        <div className="flex justify-center">
-          <LinkedinIcon width="50" height="50" href={linkedin_link} />
+        <div data-aos="zoom-out" data-aos-delay="1000">
+          <div className="flex justify-center">
+            <LinkedinIcon width="50" height="50" href={linkedin_link} />
+          </div>
         </div>
-        <div className="flex justify-center">
-          <GithubIcon width="50" height="50" href={github_link} />
+        <div data-aos="zoom-out" data-aos-delay="1200">
+          <div className="flex justify-center">
+            <GithubIcon width="50" height="50" href={github_link} />
+          </div>
         </div>
       </div>
     </section>
