@@ -72,7 +72,7 @@ export default function Contact() {
           <Dot />
         </h2>
       </div>
-      <div data-aos="fade-right" data-aos-delay="200">
+      <div data-aos="fade-up" data-aos-delay="200">
         <div className="flex items-center justify-center space-x-2">
           <PhoneIcon />
           <p className="text-lg text-gray-400 2xl:text-2xl hover:text-white">
@@ -80,7 +80,7 @@ export default function Contact() {
           </p>
         </div>
       </div>
-      <div data-aos="fade-right" data-aos-delay="400">
+      <div data-aos="fade-up" data-aos-delay="400">
         <div className="flex items-center justify-center space-x-2">
           <MailIcon />
           <p className="text-lg text-gray-400 2xl:text-2xl hover:text-white">
