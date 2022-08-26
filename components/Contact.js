@@ -66,27 +66,21 @@ export default function Contact() {
       id="contact"
       className="w-full max-w-4xl px-4 pt-32 mx-auto space-y-8 text-center lg:pt-80"
     >
-      <div data-aos="fade-up">
-        <h2 className="text-4xl text-white">
-          Contact
-          <Dot />
-        </h2>
+      <h2 className="text-4xl text-white">
+        Contact
+        <Dot />
+      </h2>
+      <div className="flex items-center justify-center space-x-2">
+        <PhoneIcon />
+        <p className="text-lg text-gray-400 2xl:text-2xl hover:text-white">
+          {phone_number}
+        </p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="200">
-        <div className="flex items-center justify-center space-x-2">
-          <PhoneIcon />
-          <p className="text-lg text-gray-400 2xl:text-2xl hover:text-white">
-            {phone_number}
-          </p>
-        </div>
-      </div>
-      <div data-aos="fade-up" data-aos-delay="400">
-        <div className="flex items-center justify-center space-x-2">
-          <MailIcon />
-          <p className="text-lg text-gray-400 2xl:text-2xl hover:text-white">
-            {email_address}
-          </p>
-        </div>
+      <div className="flex items-center justify-center space-x-2">
+        <MailIcon />
+        <p className="text-lg text-gray-400 2xl:text-2xl hover:text-white">
+          {email_address}
+        </p>
       </div>
       <div className="grid grid-cols-4 gap-0 mx-auto !mt-16">
         <div data-aos="zoom-out" data-aos-delay="600">
