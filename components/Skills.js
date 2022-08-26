@@ -86,7 +86,7 @@ export default function Skills() {
           );
         })}
       </ul>
-      <div data-aos="fade-up" data-aos-delay="1000">
+      <div data-aos="fade-up" data-aos-delay="800">
         <Button
           title="Check my CodeWars"
           href="https://www.codewars.com/users/maciejadamski"
