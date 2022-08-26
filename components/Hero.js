@@ -39,7 +39,7 @@ export default function Hero() {
           {headers.map((header, index) => {
             return (
               <>
-                <div data-aos="fade-right">
+                <div data-aos="fade-up">
                   <h1
                     key={index}
                     className="text-4xl text-center text-white lg:text-5xl xl:text-6xl "
@@ -55,19 +55,19 @@ export default function Hero() {
             );
           })}
 
-          <div data-aos="fade-right" data-aos-delay="300">
+          <div data-aos="fade-up" data-aos-delay="300">
             <p className="text-lg text-center text-gray-400 md:text-left md:text-2xl">
               {paragraph()}
             </p>
           </div>
-          <div data-aos="fade-right" data-aos-delay="500">
+          <div data-aos="fade-up" data-aos-delay="500">
             <Button
               title="Page source code"
               href="https://github.com/maciejadamski89/next-my-resume-page"
             />
           </div>
         </div>
-        <div data-aos="fade-left">
+        <div data-aos="fade-up">
           <div className="flex justify-center mt-8 md:mt-0 md:justify-end">
             <div className="w-1/2 md:w-full">
               <Image

@@ -12,7 +12,7 @@ export default function Experience() {
           <Dot />
         </h2>
       </div>
-      <div data-aos="fade-right" data-aos-delay="400">
+      <div data-aos="fade-up" data-aos-delay="400">
         <p className="text-lg text-gray-400 2xl:text-2xl">
           <a href="https://www.nomachine.com/" className="link">
             NoMachine
@@ -21,7 +21,7 @@ export default function Experience() {
           <br></br>
         </p>
       </div>
-      <div data-aos="fade-right" data-aos-delay="600">
+      <div data-aos="fade-up" data-aos-delay="600">
         <p className="text-lg text-gray-400 2xl:text-2xl">
           <a href="https://www.ibm.com/" className="link">
             IBM
@@ -30,7 +30,7 @@ export default function Experience() {
           <br></br>
         </p>
       </div>
-      <div data-aos="fade-right" data-aos-delay="800">
+      <div data-aos="fade-up" data-aos-delay="800">
         <p className="text-lg text-gray-400 2xl:text-2xl">
           <a href="https://www.kyndryl.com/" className="link">
             Kyndryl
