@@ -27,13 +27,13 @@ export default function About() {
           <Dot />
         </h2>
       </div>
-      <div data-aos="fade-up" data-aos-delay="300">
+      <div data-aos="fade-right" data-aos-delay="300">
         <p className="text-lg text-gray-400 2xl:text-2xl">
           {about_me_description}
         </p>
       </div>
       <div>
-        <div data-aos="fade-up" data-aos-delay="400">
+        <div data-aos="fade-left" data-aos-delay="500">
           <Button title="Get in touch" href="#contact" />
         </div>
       </div>

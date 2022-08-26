@@ -18,7 +18,3 @@ h2 {
 .link {
   @apply underline underline-offset-2 hover:text-blue-800;
 }
-
-.aos-init:not(.aos-animate):after {
-  position: fixed;
-}

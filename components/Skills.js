@@ -78,15 +78,15 @@ export default function Skills() {
             >
               <div data-aos="zoom-out" data-aos-delay={delay}>
                 <Link href={dev.link}>
-                  <a className="mb-2 text-gray-400 link">{dev.name}</a>
+                  <a className="mb-6 text-gray-400 link">{dev.name}</a>
                 </Link>
-                {dev.icon}
+                <div className="pt-4">{dev.icon}</div>
               </div>
             </li>
           );
         })}
       </ul>
-      <div data-aos="fade-up" data-aos-delay="800">
+      <div data-aos="fade-left" data-aos-delay="1400">
         <Button
           title="Check my CodeWars"
           href="https://www.codewars.com/users/maciejadamski"
