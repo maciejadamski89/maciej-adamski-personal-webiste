@@ -87,12 +87,10 @@ export default function Skills() {
         })}
       </ul>
       <div data-aos="fade-left" data-aos-delay="1000">
-        <div>
-          <Button
-            title="Check my CodeWars"
-            href="https://www.codewars.com/users/maciejadamski"
-          />
-        </div>
+        <Button
+          title="Check my CodeWars"
+          href="https://www.codewars.com/users/maciejadamski"
+        />
       </div>
     </section>
   );
