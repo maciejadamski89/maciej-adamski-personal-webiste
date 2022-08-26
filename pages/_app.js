@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({
       offset: 100,
+      disable: "mobile",
     });
   }, []);
   return <Component {...pageProps} />;
