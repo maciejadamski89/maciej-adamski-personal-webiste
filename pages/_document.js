@@ -10,7 +10,7 @@ export default function Document() {
         ></link>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body className="text-white bg-dark font-poppins">
+      <body className="overflow-x-hidden text-white bg-dark font-poppins">
         <Main />
         <NextScript />
       </body>
