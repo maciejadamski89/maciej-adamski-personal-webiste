@@ -64,7 +64,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="max-w-4xl px-4 pt-32 mx-auto space-y-8 text-center lg:pt-80"
+      className="w-full max-w-4xl px-4 pt-32 mx-auto space-y-8 text-center lg:pt-80"
     >
       <div data-aos="fade-up">
         <h2 className="text-4xl text-white">
