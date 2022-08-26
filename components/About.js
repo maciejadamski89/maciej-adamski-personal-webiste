@@ -33,7 +33,7 @@ export default function About() {
         </p>
       </div>
       <div>
-        <div data-aos="fade-left" data-aos-delay="400">
+        <div data-aos="fade-up" data-aos-delay="400">
           <Button title="Get in touch" href="#contact" />
         </div>
       </div>
