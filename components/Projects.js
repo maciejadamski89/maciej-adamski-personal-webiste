@@ -7,22 +7,10 @@ import Link from "next/link";
 
 const projects = [
   {
-    name: "My resume page",
-    description:
-      "Which is actually this page. I'm currently still working on it. I want to make it in the right way which is not the same as simplest.",
-    link: null,
-  },
-  {
     name: "DevOps Portal",
     description:
-      "I am building a platform/portal for our major French client - Michelin. The portal is designed to facilitate the management of production applications and servers. The project originated from my idea and initiative.",
+      "I am building a platform/portal for our major French client. The portal is designed to facilitate the management of production applications and servers. The project originated from my idea and initiative.",
     link: null,
-  },
-  {
-    name: "Bogoshipo",
-    description:
-      "Bogoshipo is a Blockchain Pet Game in progress. This website provides information on the development and architecture.",
-    link: "https://bogoshipo.com",
   },
   {
     name: "Template-bhai",
