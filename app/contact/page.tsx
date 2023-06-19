@@ -11,7 +11,7 @@ const github_link = "https://github.com/maciejadamski89";
 export default function Contact() {
 	return (
 		<section id="contact" className="w-full max-w-4xl px-4 mx-auto mt-32 space-y-8 text-center">
-			<div data-aos="fade-up">
+			<div>
 				<h2 className="text-4xl text-white">
 					Contact
 					<Dot />
@@ -19,31 +19,31 @@ export default function Contact() {
 			</div>
 			<div className="pt-32">
 				<div className="flex items-center justify-center space-x-2">
-					<p className="text-lg text-gray-400 2xl:text-2xl hover:text-white">{phone_number}</p>
+					<p className="text-xl font-semibold text-indigo-200/80">{phone_number}</p>
 				</div>
 			</div>
-			<div data-aos="fade-right" data-aos-delay="500">
+			<div>
 				<div className="flex items-center justify-center space-x-2">
-					<p className="text-lg text-gray-400 2xl:text-2xl hover:text-white">{email_address}</p>
+					<p className="text-xl font-semibold text-indigo-200/80">{email_address}</p>
 				</div>
 			</div>
 			<div className="grid grid-cols-4 gap-0 mx-auto !mt-16">
-				<div data-aos="zoom-out" data-aos-delay="600">
+				<div>
 					<div className="flex justify-center">
 						<TwitterIcon width="50" height="50" href={twiter_link} />
 					</div>
 				</div>
-				<div data-aos="zoom-out" data-aos-delay="800">
+				<div>
 					<div className="flex justify-center">
 						<FacebookIcon width="50" height="50" href={facebook_link} />
 					</div>
 				</div>
-				<div data-aos="zoom-out" data-aos-delay="1000">
+				<div>
 					<div className="flex justify-center">
 						<LinkedinIcon width="50" height="50" href={linkedin_link} />
 					</div>
 				</div>
-				<div data-aos="zoom-out" data-aos-delay="1200">
+				<div>
 					<div className="flex justify-center">
 						<GithubIcon width="50" height="50" href={github_link} />
 					</div>

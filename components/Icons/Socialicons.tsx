@@ -9,7 +9,7 @@ export function TwitterIcon({width, height, href}: props) {
 		<div>
 			<a href={href}>
 				<svg
-					className="text-blue-500 fill-current hover:text-blue-600"
+					className="text-indigo-800 fill-current hover:text-indigo-700"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 24 24"
 					width={width}
@@ -29,7 +29,7 @@ export function FacebookIcon({width, height, href}: props) {
 				<svg
 					height={height}
 					width={width}
-					className="text-blue-500 fill-current hover:text-blue-600"
+					className="text-indigo-800 fill-current hover:text-indigo-700"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 24 24"
 				>
@@ -47,7 +47,7 @@ export function LinkedinIcon({width, height, href}: props) {
 				<svg
 					height={height}
 					width={width}
-					className="text-blue-500 fill-current hover:text-blue-600"
+					className="text-indigo-800 fill-current hover:text-indigo-700"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 448 512"
 				>
@@ -65,7 +65,7 @@ export function GithubIcon({width, height, href}: props) {
 				<svg
 					height={height}
 					width={width}
-					className="text-blue-500 fill-current hover:text-blue-600"
+					className="text-indigo-800 fill-current hover:text-indigo-700"
 					viewBox="0 0 16 16"
 				>
 					<path
