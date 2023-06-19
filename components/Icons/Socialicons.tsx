@@ -1,9 +1,15 @@
-export function TwitterIcon({width, height, href}) {
+type props = {
+	width: string;
+	height: string;
+	href: string;
+};
+
+export function TwitterIcon({width, height, href}: props) {
 	return (
 		<div>
 			<a href={href}>
 				<svg
-					className="text-blue-500 fill-current hover:text-blue-700"
+					className="text-blue-500 fill-current hover:text-blue-600"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 24 24"
 					width={width}
@@ -16,14 +22,14 @@ export function TwitterIcon({width, height, href}) {
 	);
 }
 
-export function FacebookIcon({width, height, href}) {
+export function FacebookIcon({width, height, href}: props) {
 	return (
 		<div>
 			<a href={href}>
 				<svg
 					height={height}
 					width={width}
-					className="text-blue-500 fill-current hover:text-blue-700"
+					className="text-blue-500 fill-current hover:text-blue-600"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 24 24"
 				>
@@ -34,14 +40,14 @@ export function FacebookIcon({width, height, href}) {
 	);
 }
 
-export function LinkedinIcon({width, height, href}) {
+export function LinkedinIcon({width, height, href}: props) {
 	return (
 		<div>
 			<a href={href}>
 				<svg
 					height={height}
 					width={width}
-					className="text-blue-500 fill-current hover:text-blue-700"
+					className="text-blue-500 fill-current hover:text-blue-600"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 448 512"
 				>
@@ -52,14 +58,14 @@ export function LinkedinIcon({width, height, href}) {
 	);
 }
 
-export function GithubIcon({width, height, href}) {
+export function GithubIcon({width, height, href}: props) {
 	return (
 		<div>
 			<a href={href}>
 				<svg
 					height={height}
 					width={width}
-					className="text-blue-500 fill-current hover:text-blue-700"
+					className="text-blue-500 fill-current hover:text-blue-600"
 					viewBox="0 0 16 16"
 				>
 					<path
