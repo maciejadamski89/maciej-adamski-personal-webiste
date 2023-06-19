@@ -1,3 +1,3 @@
 export function Dot() {
-	return <span className="text-blue-500 ">.</span>;
+	return <span className="text-indigo-700 ">.</span>;
 }

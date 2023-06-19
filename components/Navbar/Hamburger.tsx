@@ -12,7 +12,7 @@ export default function Hamburger() {
 					</Menu.Button>
 
 					{open && (
-						<div className="absolute top-0 left-0 w-full p-8 text-center bg-slate-800/95">
+						<div className="absolute top-0 left-0 w-full p-8 text-center bg-indigo-950/95">
 							<Menu.Items static>
 								<Menu.Item>
 									{({active}) => (

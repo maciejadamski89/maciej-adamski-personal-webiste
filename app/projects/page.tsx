@@ -31,7 +31,7 @@ export default function Projects() {
 	return (
 		<section id="projects" className="max-w-4xl px-4 mx-auto mt-32 space-y-8 text-center">
 			<div data-aos="fade-up">
-				<h2 className="text-4xl text-white">
+				<h2 className="mx-auto text-4xl font-bold text-white">
 					Side Projects
 					<Dot />
 				</h2>
@@ -42,14 +42,14 @@ export default function Projects() {
 						<div key={project.name}>
 							<div
 								key={project.name}
-								className="flex items-center h-full max-w-xl p-4 mx-auto my-2 overflow-hidden rounded shadow-lg bg-slate-800/20"
+								className="flex items-center h-full max-w-xl p-4 mx-auto my-2 overflow-hidden rounded bg-indigo-950/40"
 							>
 								<div className="px-6 py-4">
 									{project.link ? (
 										<h3 className="mb-2 text-xl font-bold text-white">
 											<Link
 												href={project.link}
-												className="text-lg text-white underline underline-offset-2 hover:text-blue-500 text-normal"
+												className="text-xl text-white underline underline-offset-2 hover:text-blue-500 text-normal"
 											>
 												{project.name}
 											</Link>
@@ -57,7 +57,7 @@ export default function Projects() {
 									) : (
 										<h3 className="mb-2 text-xl font-bold text-white">{project.name}</h3>
 									)}
-									<p className="mt-4 text-xl text-gray-400 ">{project.description}</p>
+									<p className="mt-4 text-xl text-indigo-200/80 ">{project.description}</p>
 								</div>
 							</div>
 						</div>

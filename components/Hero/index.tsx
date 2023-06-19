@@ -17,7 +17,7 @@ export default function Hero() {
 					</div>
 
 					<div className="max-w-2xl">
-						<p className="text-base text-left text-gray-400 md:text-lg md:text-left md:text-2xl">
+						<p className="text-base text-left text-indigo-200/80 md:text-lg md:text-left">
 							I am an experienced Software Engineer specializing in development and implementation web
 							appl solutions. Proficient in multiple programming languages and frameworks, with a strong
 							focus on clean code and scalable architecture. Passionate about creating efficient and

@@ -12,19 +12,19 @@ export default function Skills() {
 			<div className="pt-32 space-y-4">
 				<div className="flex flex-col items-center justify-center space-y-2">
 					<h3 className="text-lg font-semibold text-white">Programming Languages</h3>
-					<p className="text-lg text-gray-400">
+					<p className="text-lg text-indigo-200/80">
 						JavaScript, TypeScript, Python, Java, C++, Shell Scrpting, HTML, CSS, SCSS
 					</p>
 				</div>
 				<div className="flex flex-col items-center justify-center space-y-2">
 					<h3 className="text-lg font-semibold text-white">Frameworks</h3>
-					<p className="text-lg text-gray-400">
+					<p className="text-lg text-indigo-200/80">
 						React, Next13, NodeJS, Django, Docker, Docker Compose, Figma, VUE, Prometheus
 					</p>
 				</div>
 				<div className="flex flex-col items-center justify-center space-y-2">
 					<h3 className="text-lg font-semibold text-white">Libraries</h3>
-					<p className="text-lg text-gray-400">
+					<p className="text-lg text-indigo-200/80">
 						Tailwind CSS, Bootstrap, jQuery, Sass, Tanstack Table, MUI Data Grid, Redis, Memcached, Vuetify,
 						Framer Motion, Animate on scroll, Radix, HeadlessUI, react-chartjs-2, chart.js, npm,
 						datatables.js, flatpickr.js, Eslint, Prettier, Winston, Gulp, Webpack
@@ -32,17 +32,17 @@ export default function Skills() {
 				</div>
 				<div className="flex flex-col items-center justify-center space-y-2">
 					<h3 className="text-lg font-semibold text-white">Platforms</h3>
-					<p className="text-lg text-gray-400">
+					<p className="text-lg text-indigo-200/80">
 						GitHub, GitLab, Snow Service, Vercel, OpenShift, Supabase, Wordpress, OpenAI, Grafana
 					</p>
 				</div>
 				<div className="flex flex-col items-center justify-center space-y-2">
 					<h3 className="text-lg font-semibold text-white">Databases</h3>
-					<p className="text-lg text-gray-400">PostgreSQL, MongoDB</p>
+					<p className="text-lg text-indigo-200/80">PostgreSQL, MongoDB</p>
 				</div>
 				<div className="flex flex-col items-center justify-center space-y-2">
 					<h3 className="text-lg font-semibold text-white">Dev Tools</h3>
-					<p className="text-lg text-gray-400">VSCode, VIM, FishShell, WSL2</p>
+					<p className="text-lg text-indigo-200/80">VSCode, VIM, FishShell, WSL2</p>
 				</div>
 			</div>
 		</section>

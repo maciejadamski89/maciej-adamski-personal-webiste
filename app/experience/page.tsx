@@ -22,12 +22,12 @@ export default function Experience() {
 						<h4 className="font-semibold text-white">
 							Security Application for Client - since January 2023 - ongoing
 						</h4>
-						<p className="mb-2 text-slate-400">
+						<p className="mb-2 text-indigo-200/80">
 							Application that allows the client to obtain artifacts from servers in the event of a
 							cyber-attack or security vulnerability. Composed of four services, the application is fully
 							integrated with our whole middleware infrastructure.
 						</p>
-						<ul className="space-y-2 text-base font-normal list-disc list-inside text-slate-400">
+						<ul className="space-y-2 text-base font-normal list-disc list-inside text-indigo-200/80">
 							<li>
 								The implementation of new features in the application, in accordance with client
 								requirements, has resulted in notable impacts; Successful and timely delivery 4 new
@@ -54,14 +54,14 @@ export default function Experience() {
 						<h4 className="font-semibold text-white">
 							DevOps Portal for Client – since April 2021 - ongoing
 						</h4>
-						<p className="mb-2 text-slate-400">
+						<p className="mb-2 text-indigo-200/80">
 							Portal that provides DevOps engineers access to backup reports from four different
 							technologies. The application also features a browser for Tivoli Workload Scheduler (task
 							manager for all client applications and our middleware). The whole project was initiated by
 							myself and together with my one colleague only – fully developed. It’s composed of over 15
 							services currently and still growing.
 						</p>
-						<ul className="space-y-2 text-base font-normal list-disc list-inside text-slate-400">
+						<ul className="space-y-2 text-base font-normal list-disc list-inside text-indigo-200/80">
 							<li>
 								Implementation of new technologies into the project and delivering new functionality
 								according to customer requirements. Since the beginning of the project, we have
@@ -102,7 +102,7 @@ export default function Experience() {
 						as DevOps Leader - 2015-2021, Wroclaw
 					</h3>
 					<div>
-						<ul className="space-y-2 text-base font-normal list-disc list-inside text-slate-400">
+						<ul className="space-y-2 text-base font-normal list-disc list-inside text-indigo-200/80">
 							<li>
 								Responsible for preparing all new client applications for release in the production
 								environment, ensuring alignment with client specifications and requirements. My role
@@ -131,7 +131,7 @@ export default function Experience() {
 						as C++ Developer - 2014-2015, Wroclaw
 					</h3>
 					<div>
-						<ul className="space-y-2 text-base font-normal list-disc list-inside text-slate-400">
+						<ul className="space-y-2 text-base font-normal list-disc list-inside text-indigo-200/80">
 							<li>
 								Successful implementation of CUDA in "C for graphics" into the application as very alpha
 								version

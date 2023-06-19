@@ -38,7 +38,7 @@ export default function Menu() {
 		<div>
 			<ul className="items-center hidden space-x-6 lg:flex">
 				{items.map((item, index) => {
-					return <Navlink key={index} name={item.name} url={item.url} home={item.home} />;
+					return <Navlink key={index} name={item.name} url={item.url} />;
 				})}
 			</ul>
 		</div>
