@@ -49,7 +49,7 @@ export default function Projects() {
 										<h3 className="mb-2 text-xl font-bold text-white">
 											<Link
 												href={project.link}
-												className="text-xl text-white underline underline-offset-2 hover:text-blue-500 text-normal"
+												className="text-xl text-white underline underline-offset-2 hover:text-indigo-700 text-normal"
 											>
 												{project.name}
 											</Link>
